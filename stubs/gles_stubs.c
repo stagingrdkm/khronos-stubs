@@ -359,6 +359,11 @@ void glGetPointerv(GLenum pname, void **params)
 {
 }
 
+const GLubyte *glGetString(GLenum name)
+{
+   return 0;
+}
+
 void glGetTexEnviv(GLenum target, GLenum pname, GLint *params)
 {
 }
@@ -869,6 +874,11 @@ void glGenerateMipmapOES(GLenum target)
 {
 }
 
+void *glMapBufferOES(GLenum target, GLenum access)
+{
+   return 0;
+}
+
 GLboolean glUnmapBufferOES(GLenum target)
 {
    return (GLboolean)0;
@@ -1021,6 +1031,11 @@ void glPopGroupMarkerEXT(void)
 
 void glDiscardFramebufferEXT(GLenum target, GLsizei numAttachments, const GLenum *attachments)
 {
+}
+
+void *glMapBufferRangeEXT(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)
+{
+   return 0;
 }
 
 void glFlushMappedBufferRangeEXT(GLenum target, GLintptr offset, GLsizeiptr length)

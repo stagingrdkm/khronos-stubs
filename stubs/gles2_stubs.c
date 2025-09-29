@@ -299,6 +299,11 @@ void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *
 {
 }
 
+const GLubyte *glGetString(GLenum name)
+{
+   return 0;
+}
+
 void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat *params)
 {
 }
@@ -732,6 +737,11 @@ void glGetProgramBinaryOES(GLuint program, GLsizei bufSize, GLsizei *length, GLe
 
 void glProgramBinaryOES(GLuint program, GLenum binaryFormat, const void *binary, GLint length)
 {
+}
+
+void *glMapBufferOES(GLenum target, GLenum access)
+{
+   return 0;
 }
 
 GLboolean glUnmapBufferOES(GLenum target)
@@ -1237,6 +1247,11 @@ void glFramebufferTextureEXT(GLenum target, GLenum attachment, GLuint texture, G
 
 void glVertexAttribDivisorEXT(GLuint index, GLuint divisor)
 {
+}
+
+void *glMapBufferRangeEXT(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)
+{
+   return 0;
 }
 
 void glFlushMappedBufferRangeEXT(GLenum target, GLintptr offset, GLsizeiptr length)
@@ -2927,6 +2942,11 @@ void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture,
 {
 }
 
+void *glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)
+{
+   return 0;
+}
+
 void glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length)
 {
 }
@@ -3059,6 +3079,11 @@ void glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat *value)
 
 void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)
 {
+}
+
+const GLubyte *glGetStringi(GLenum name, GLuint index)
+{
+   return 0;
 }
 
 void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)
