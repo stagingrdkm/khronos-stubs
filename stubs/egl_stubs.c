@@ -95,6 +95,11 @@ EGLBoolean eglQueryContext(EGLDisplay dpy, EGLContext ctx, EGLint attribute, EGL
    return (EGLBoolean)0;
 }
 
+const char *eglQueryString(EGLDisplay dpy, EGLint name)
+{
+   return 0;
+}
+
 EGLBoolean eglQuerySurface(EGLDisplay dpy, EGLSurface surface, EGLint attribute, EGLint *value)
 {
    return (EGLBoolean)0;
@@ -499,6 +504,11 @@ EGLBoolean eglQueryDeviceAttribEXT(EGLDeviceEXT device, EGLint attribute, EGLAtt
    return (EGLBoolean)0;
 }
 
+const char *eglQueryDeviceStringEXT(EGLDeviceEXT device, EGLint name)
+{
+   return 0;
+}
+
 EGLBoolean eglQueryDevicesEXT(EGLint max_devices, EGLDeviceEXT *devices, EGLint *num_devices)
 {
    return (EGLBoolean)0;
@@ -549,6 +559,11 @@ EGLBoolean eglQueryOutputLayerAttribEXT(EGLDisplay dpy, EGLOutputLayerEXT layer,
    return (EGLBoolean)0;
 }
 
+const char *eglQueryOutputLayerStringEXT(EGLDisplay dpy, EGLOutputLayerEXT layer, EGLint name)
+{
+   return 0;
+}
+
 EGLBoolean eglOutputPortAttribEXT(EGLDisplay dpy, EGLOutputPortEXT port, EGLint attribute, EGLAttrib value)
 {
    return (EGLBoolean)0;
@@ -557,6 +572,11 @@ EGLBoolean eglOutputPortAttribEXT(EGLDisplay dpy, EGLOutputPortEXT port, EGLint 
 EGLBoolean eglQueryOutputPortAttribEXT(EGLDisplay dpy, EGLOutputPortEXT port, EGLint attribute, EGLAttrib *value)
 {
    return (EGLBoolean)0;
+}
+
+const char *eglQueryOutputPortStringEXT(EGLDisplay dpy, EGLOutputPortEXT port, EGLint name)
+{
+   return 0;
 }
 
 EGLDisplay eglGetPlatformDisplayEXT(EGLenum platform, void *native_display, const EGLint *attrib_list)
@@ -617,6 +637,16 @@ EGLBoolean eglExportDMABUFImageQueryMESA(EGLDisplay dpy, EGLImageKHR image, int 
 EGLBoolean eglExportDMABUFImageMESA(EGLDisplay dpy, EGLImageKHR image, int *fds, EGLint *strides, EGLint *offsets)
 {
    return (EGLBoolean)0;
+}
+
+char *eglGetDisplayDriverConfig(EGLDisplay dpy)
+{
+   return 0;
+}
+
+const char *eglGetDisplayDriverName(EGLDisplay dpy)
+{
+   return 0;
 }
 
 EGLBoolean eglSwapBuffersRegionNOK(EGLDisplay dpy, EGLSurface surface, EGLint numRects, const EGLint *rects)
@@ -757,5 +787,10 @@ EGLBoolean eglUnbindWaylandDisplayWL(EGLDisplay dpy, struct wl_display *display)
 EGLBoolean eglQueryWaylandBufferWL(EGLDisplay dpy, struct wl_resource *buffer, EGLint attribute, EGLint *value)
 {
    return (EGLBoolean)0;
+}
+
+struct wl_buffer *eglCreateWaylandBufferFromImageWL(EGLDisplay dpy, EGLImageKHR image)
+{
+   return 0;
 }
 
