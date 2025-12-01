@@ -1,11 +1,3 @@
-This repository contains code under multiple licenses:
--Khronos GLES headers are MIT license 
--khrplatform.h is legally also considered MIT license 
-(License text differs only "Materials" wording instead of "Software" wording )
--Khronos EGL headers and rest of code are Apachev2 license
-
-See below text for full terms of each license.
-
 The MIT License
 ---------------
 Copyright <YEAR> <COPYRIGHT HOLDER>
